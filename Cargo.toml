@@ -1,0 +1,26 @@
+[package]
+name = "date-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+regex = "1"
+chrono-tz = "0.6"
+
+[[example]]
+name = "basic_usage"
+path = "examples/basic_usage.rs"
+
+[[example]]
+name = "timezone_conversion"
+path = "examples/timezone_conversion.rs"
+
+
+[[example]]
+name = "recurrence_rules"
+path = "examples/recurrence_rules.rs"
+
+[[example]]
+name = "localization"
+path = "examples/localization.rs"
